@@ -19,7 +19,7 @@ h2{
   font-family: Abel;
   font-weight:normal;
   
-#flagg{
+.flagg{
   width: 62px;
   height:43px;
   position:relative;
@@ -28,4 +28,41 @@ h2{
   
   
 .logo{
+  
+  .mine-turer-text{
+  font-size: 25px;
+}
+
+.mine-turer-container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+
+}
+
+.mine-turer-ul{
+  width: 500px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.mine-turer-ul li{
+  background-color: green;
+  color: white;
+  list-style: none;
+  border-radius: 5px;
+  height: 50px;
+  margin: 20px;
+  font-size: 30px;
+
+}
+.min-tur{
+  border: solid green;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
  
