@@ -16,7 +16,8 @@
     padding:10px;
     font-size:20px;
     font-family:Abel;
-        position:center;
+        position:relative;
+        left: 300px;
     }
     #flagg{
   width: 62px;
@@ -26,18 +27,18 @@
   left:0px;
     }
      #backBtn{
-     width: 55px;
-  height:30px;
+     width: 62px;
+  height:43px;
   position:absolute;
   top:0px;
-  left:0px;
+  left:65px;
     }
 </style>
 <body>
-    <img src="images/flagg.png" id="flagg"><br>
-    <img src="images/backBtn. jpg id="backBtn">
-   
-    <br>
+<img src="images/flagg.png" id="flagg"><br>
+<img src="images/backBtn. jpg" id="backBtn">
+
+<br>
 <select id="slcMeny">
     <option>eks1</option>
     <option>eks2</option>
@@ -50,9 +51,9 @@
     var slcMeny=document.getElementById("slcMeny");
     var flagg=document.getElementById("flagg");
     var backBtn=document.getElementById("backBtn");
-                                            
+
 backBtn.onclick=function()
-                                                 
+
     slcMeny.onchange=function(){
     var indeks = slcMeny.selectedIndex;
     }
