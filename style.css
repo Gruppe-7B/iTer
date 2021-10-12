@@ -9,23 +9,25 @@ width:110px;
   border-style:solid;
   border-color:#556b2f;
   padding:5px;
+  }
    
 h1{
    font-size: 30px;
   font-family: Abel;
   font-weight:normal;
+  }
 h2{
   font-size: 20px;
   font-family: Abel;
   font-weight:normal;
-  
+  }
 .flagg{
   width: 62px;
   height:43px;
   position:relative;
   top:0px;
   left:0px;
-  
+  }
   
 .logo{
   
