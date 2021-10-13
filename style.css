@@ -1,3 +1,49 @@
+/*For alle sidene*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #F7F7F7;
+}
+.navbar{
+  height: 75px;
+  background-color: #E8E6E1;
+}
+.navElementContainer{
+  list-style: none;
+  float: left;
+}
+.navElement{
+  display: inline;
+  margin: 0px;
+}
+.navElement a{
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.navElement img{
+  width: 3%;
+  background-color: red;
+}
+.navElement h1{
+  display: inline;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;}
+
+.icon{
+  width: 3%;
+  float: left;
+  display: inline;
+}
+.clear{
+  clear: both;
+}
+/*Valgt Tur*/
+
+
 
 #logIn{ 
 width:110px;
@@ -30,6 +76,8 @@ h2{
   }
   
 .logo{
+}
+}
   
   }
   .mine-turer-text{
