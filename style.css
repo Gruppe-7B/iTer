@@ -7,16 +7,20 @@ body{
   background-color: #F7F7F7;
 }
 .navbar{
-  height: 75px;
+  height: 80px;
+  margin-top: -10px;
   background-color: #E8E6E1;
 }
 .navElementContainer{
   list-style: none;
-  float: left;
 }
+
 .navElement{
   display: inline;
-  margin: 0px;
+  width:25%;
+}
+.navElement:nth-child(3) {
+margin-left: 85%;
 }
 .navElement a{
   text-decoration: none;
@@ -24,10 +28,6 @@ body{
 }
 .navElement img{
   width: 3%;
-  background-color: red;
-}
-.navElement h1{
-  display: inline;
 }
 .container{
   width: 90%;
@@ -41,12 +41,22 @@ body{
 .clear{
   clear: both;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
+footer {
+  margin-top: 40px;
+  background-color: #E8E6E1;
+  width: 100%;
+  margin-bottom: -10px;
+}
 /*Valgt Tur*/
 
 
 
-#logIn{ 
-width:110px;
+#logIn{
+  width:110px;
   text-align: center;
   width:110px;
   font-size:20px;
@@ -55,32 +65,32 @@ width:110px;
   border-style:solid;
   border-color:#556b2f;
   padding:5px;
-  }
-   
+}
+
 h1{
-   font-size: 30px;
+  font-size: 30px;
   font-family: Abel;
   font-weight:normal;
-  }
+}
 h2{
   font-size: 20px;
   font-family: Abel;
   font-weight:normal;
-  }
+}
 .flagg{
   width: 62px;
   height:43px;
   position:relative;
   top:0px;
   left:0px;
-  }
-  
+}
+
 .logo{
 }
 }
-  
-  }
-  .mine-turer-text{
+
+}
+.mine-turer-text{
   font-size: 25px;
 }
 
@@ -116,4 +126,4 @@ h2{
   height: 200px;
   text-align: center;
 }
- 
+
