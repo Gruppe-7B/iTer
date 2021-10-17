@@ -8,16 +8,14 @@
     <title>Logg Inn!</title>
     <style>
         .navbar{
-            margin-top: 0px;
+            margin-top: 0;
         }
-        .logInHolder{
-            width: 100%;
-        }
+
         .logInHolder form{
-            margin: 20px auto;
+            margin: 50px auto;
             width: 25%;
             font-size: 1.8em;
-            height: 400px;
+            overflow: hidden;
         }
         .logInHolder form input{
             border-radius: 5px;
@@ -26,21 +24,31 @@
             height: 40px;
             border: none;
         }
-        .btn{
-            margin-top: 40px;
-            color: #fff;
-            width: 75%;
-            background-color: #556b2f;
-            border: 4px solid black;
-
+        #password{
+            margin-bottom: 40px;
         }
+        .btn{
+            border-radius: 5px;
+            font-size: 1.5em;
+            margin-left: 20%;
+            padding: 10px 15px;
+            color: #fff;
+            background-color: #556b2f;
+        }
+        .small-btn{
+            background-color: blue;
+            margin-top: 50px;
+            padding: 2px 3px;
+            font-size: 1em;
+        }
+
 
     </style>
 </head>
 <body>
 <div class="navbar">
     <ul class="navElementContainer">
-        <li class="navElement"><a href="#"><img src="images/backBtn.png"/></a></li>
+        <li class="navElement"><a href="#"><img src="images/backBtn.png" alt="tilbakeKnapp"/></a></li>
         <li class="navElement"><a href="#"><img src="images/iTerlogo.png" alt="Logo/Hjem Knapp"/></a></li>
         <li class="navElement"><a href="#"><img src="images/flagg.png" alt="Velg Språk"/></a></li>
         <li class="navElement"><a href="#"><img src="images/user.png" alt="Brukerprofil"/></a></li>
@@ -50,15 +58,17 @@
 <div class="container">
     <div class="logInHolder">
         <form>
-            <p><label for="brukernavn">Brukernavn: </label></p>
-            <input type="text" name="brukernavn" id="brukernavn"/>
-            <p><label for="passord">Passord: </label></p>
-            <input type="password" name="passord" id="passord"/>
-            <input class="btn" type="button" value="Logg Inn!"/>
+            <p><label for="userName">Brukernavn: </label></p>
+            <input type="text" name="userName" id="userName"/>
+            <p><label for="password">Passord: </label></p>
+            <input type="password" name="password" id="password"/>
+            <a href="velgtur.html" class="btn">Logg Inn!</a>
+            <br>
+            <br>
+            <a href="registrering.html" class="btn small-btn" id="reg">Registrer Deg!</a>
         </form>
 
-        <p class="test">HEIHEI</p>
-        <p>HEIHEI</p>
+
     </div>
 </div>
 <footer>
