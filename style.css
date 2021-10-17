@@ -1,33 +1,46 @@
 /*For alle sidene*/
+/*https://www.w3docs.com/snippets/css/how-to-import-google-fonts-in-css-file.html*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Abel', sans-serif;
+
 }
 body{
   background-color: #F7F7F7;
 }
 .navbar{
-  height: 75px;
+  height: 80px;
+  margin-top: -10px;
   background-color: #E8E6E1;
 }
 .navElementContainer{
   list-style: none;
-  float: left;
 }
+
 .navElement{
   display: inline;
-  margin: 0px;
+  width:25%;
+}
+.navElement:nth-child(2) {
+  margin-left: 45%;
+}
+.navElement:nth-child(3) {
+  margin-left: 34%;
+}
+.navElement:nth-child(3) a img{
+
 }
 .navElement a{
   text-decoration: none;
   font-size: 1.5em;
 }
-.navElement img{
-  width: 3%;
-  background-color: red;
-}
-.navElement h1{
-  display: inline;
+.navElement img {
+  padding-top: 3px;
+  height: 60px;
+  width: 60px;
 }
 .container{
   width: 90%;
@@ -41,12 +54,31 @@ body{
 .clear{
   clear: both;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
+.test{
+  font-family: Abel;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #E8E6E1;
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+footer ul{
+  margin-left: 20px;
+  padding: 10px;
+}
 /*Valgt Tur*/
 
 
 
-#logIn{ 
-width:110px;
+#logIn{
+  width:110px;
   text-align: center;
   width:110px;
   font-size:20px;
@@ -55,32 +87,30 @@ width:110px;
   border-style:solid;
   border-color:#556b2f;
   padding:5px;
-  }
-   
+}
+
 h1{
-   font-size: 30px;
+  font-size: 30px;
   font-family: Abel;
   font-weight:normal;
-  }
+}
 h2{
   font-size: 20px;
   font-family: Abel;
   font-weight:normal;
-  }
+}
 .flagg{
   width: 62px;
   height:43px;
   position:relative;
   top:0px;
   left:0px;
-  }
-  
+}
+
 .logo{
 }
-}
-  
-  }
-  .mine-turer-text{
+
+.mine-turer-text{
   font-size: 25px;
 }
 
@@ -117,4 +147,4 @@ h2{
   text-align: center;
   margin-top: 10px;
 }
- 
+
