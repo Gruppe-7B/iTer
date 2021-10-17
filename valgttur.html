@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title>Tittel</title>
+    <title>Tur til Jegersberg!</title>
     <style>
-
         ul{
             list-style: none;
             margin: 10px;
         }
-
         .info{
             width: 100%;
         }
@@ -25,7 +23,7 @@
             float:right;
         }
         .map_View img{
-            width: 60%;
+            width: 80%;
         }
         #attendingPopUp{
             visibility: hidden;
@@ -35,14 +33,25 @@
             text-decoration: none;
             padding: 5px;
             color: #fff;
-            background-color: darkolivegreen;
+            background-color: #556b2f;
         }
         .button-big{
             padding: 10px 15px;
-            margin-left: 600px;
         }
         .button-img{
-            width: 5%;
+            width: 10%;
+            padding: 2px;
+        }
+        .buttons{
+            float: right;
+            display: inline;
+           // background-color: orange;
+        }
+        .buttons li{
+            margin-top: 10px;
+            margin-left: 15px;
+            margin-right: 20px;
+            float: left;
         }
 
     </style>
@@ -50,17 +59,17 @@
 <body>
 <div class="navbar">
     <ul class="navElementContainer">
-        <li class="navElement"><a href="#"><img src="images/iTerlogo.png" alt="logo"/></a></li>
-        <li class="navElement"><h1>iTer</h1></li>
-        <li class="navElement"><a href="#"><img src="images/user.png" alt="tilbake"/></a></li>
-        <li class="navElement"><a href="#"><img src="images/user.png" alt="profil"/></a></li>
+        <li class="navElement"><a href="#"><img src="images/backBtn.png"/></a></li>
+        <li class="navElement"><a href="#"><img src="images/iTerlogo.png" alt="Logo/Hjem Knapp"/></a></li>
+        <li class="navElement"><a href="#"><img src="images/flagg.png" alt="Velg Språk"/></a></li>
+        <li class="navElement"><a href="#"><img src="images/user.png" alt="Brukerprofil"/></a></li>
     </ul>
 </div>
+<div class="clear"></div>
 <div class="container">
         <div id="attendingPopUp">
-
             <h1> Du er påmeldt! </h1>
-            <a href="#" target ="_blank" class="button">Gå til din tur!</a>
+            <a href="#" target ="_blank" class="button">Gå til dine turer!</a>
         </div>
     <div class="clear"></div>
     <div class="info">
@@ -95,14 +104,25 @@
             <img src="images/map.jpg"/>
         </div>
         <div class="clear"></div>
-        <a href="#" class="button button-big" id="show">Bli med!</a>
-        <a href="#" ><img src="images/inv.png" alt="InviterIkon" class="button-img"/></a>
+        <ul class="buttons">
+            <li><a href="#" class="button button-big" id="show">Bli med!</a></li>
+            <li><a href="#" ><img src="images/inv.png" alt="InviterIkon" class="button-img"/></a></li>
+        </ul>
+
+
     </div>
     <div class="clear"></div>
-    <footer>
-        Gruppe 7B &copy 2021
-    </footer>
+
 </div>
+<footer>
+    <ul>
+        <li><a href="#">Vårt Github Repository</a></li>
+        <li><a href="#">Kontakt Oss!</li>
+        <li><a href="#">Kurs</a></li>
+        <li>Gruppe 7B &copy 2021</li>
+
+    </ul>
+</footer>
 <script>
     let button = document.getElementById("show");
     let showDiv = document.getElementById("attendingPopUp");
