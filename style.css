@@ -1,7 +1,12 @@
 /*For alle sidene*/
+/*https://www.w3docs.com/snippets/css/how-to-import-google-fonts-in-css-file.html*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Abel', sans-serif;
+
 }
 body{
   background-color: #F7F7F7;
@@ -53,6 +58,9 @@ a {
   text-decoration: none;
   color: #000;
 }
+.test{
+  font-family: Abel;
+}
 
 footer {
   margin-top: 40px;
@@ -101,9 +109,7 @@ h2{
 
 .logo{
 }
-}
 
-}
 .mine-turer-text{
   font-size: 25px;
 }
