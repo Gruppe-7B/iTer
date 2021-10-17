@@ -10,27 +10,66 @@
 
 <style>
 
-    #testingskog{
+    #fjellikon{
+        margin-right: 300px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+    }
+
+    #skog{
         margin-right: 300px;
         margin-bottom: 20px;
         margin-left: 0;
         height: 70px;
-        width: 50px;
+        width: 70px;
         object-fit: contain;
 
     }
 
-    .Sok{
+    #havetsikon{
+        margin-right: 300px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-top: 3px;
+        height: 70px;
+        width:70px;
+        object-fit: contain;
+    }
+
+    
+    .søkefunksjon{
+        text-align: center;
         border-style: solid;
         width: 320px;
         padding: 10px;
         border: solid #556b2f;
         margin: 0;
-        border-radius: 0px;
+        border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
-
+        position: solid;
     }
+
+
+
+
+   
+        // INAKTIV .søkefunksjon{
+        border-style: solid;
+        width: 320px;
+        padding: 10px;
+        border: solid #556b2f;
+        margin: 0;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        position: solid;
+
+
+    } 
     .Fjelltur{
         border-style: solid;
         width: 320px;
@@ -40,6 +79,12 @@
         border-radius: 20px;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
+        font-family: abel;
+        font-size: 150%;
+        position: solid;
+        text-align: right;
+
     }
      .skog{
         border-style: solid;
@@ -51,10 +96,15 @@
          margin-right: auto;
          margin-left: auto;
          text-align: center;
+         font-family: abel;
+         font-size: 150%;
+         position: solid;
+         text-align: right;
 
     }
 
-     .havet{
+     
+    .havet{
          border-style: solid;
          width: 320px;
          padding: 50px;
@@ -63,26 +113,32 @@
          border-radius: 20px;
          margin-left: auto;
          margin-right: auto;
-     }
+         text-align: center;
+         font-family: abel;
+         font-size: 150%;
+         position: solid;
+         text-align: right;
+        
+    }
 
     #spraak{
         width: 70px;
         height: 50px;
-        margin-right: 200px;
-        margin-left: 200px;
-        margin-top: 20px;
-        position: sticky;
+        margin-right: 0px;
+        margin-left: 1400px;
+        margin-top: 0px;
+        position: solid;
 
     }
 
     #tilbake{
         width: 50px;
         height: 35px;
-        margin-top: 20px;
-        margin-left: 190px;
+        margin-top: 0px;
+        margin-left: 0px;
         margin-right: 370px;
         float: left;
-        position: sticky;
+        position: solid;
     }
 
     #Logo{
@@ -92,42 +148,69 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
+        position: solid;
     }
 
 </style>
 
+
+
+
 <body>
+
+
 <img src="images/flagg.png" id="spraak">
-<img src="images/backBtn.png" id="tilbake">
+
+<a href="https://gruppe-7b.github.io/iTer/"><img src="images/backBtn.png" id="tilbake"></a>
+   
 <img src="images/iTerlogo.png" id="Logo">
+
 <br>
-<br><div class="Sok">Søk..</div>
+
+<div class="søkefunksjon">
+<form>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk etter ønsket tur">
+    <button type="submit">Søk</button>
+    
+
+   </form>
+</div>
 
 <br>
 <br>
-
 
 <div class="skog">
     <p id="tekstskog">Skogstur i jegersberg</p>
-    <img src="images/iTerlogo.png" id="testingskog">
+    <img src="images/skogikon.png" id="skog">
 
 </div>
 
 <br>
 <br>
 
-<div class="Fjelltur">Klatretur på campus</div>
+<div class="Fjelltur">
+    <p id="klatre">Klatretur opp hovedbygget</p>
+    <img src="images/fjellikon.png" id="fjellikon">
+    </div>
 
 <br>
 <br>
 
-<div class="havet">Tømmersurfing i Otra</div>
+<div class="havet">
+    <h2 id="tommer">Tømmersurfing i Otra</h2>
+    <img src="images/sjøikon.png" id="havetsikon">
+</div>
+
+
+
 
 
 </body>
 
 <script>
-    // Hva enn som skal stå her
+  
+
 </script>
 
 
