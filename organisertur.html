@@ -5,29 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>iTer</title>
+        <style>
+            
+        #flagg{
+        width: 62px;
+        height:43px;
+        position:absolute;
+        top:0px;
+        margin-left:50px;
+         }
+    
+        #iTerLogo{
+        width: 62px;
+        height:50px;
+        position:absolute;
+        top:0px;
+        left:1000px;
+        }
+        
+        #backBtn{
+        width: 37px;
+        height:18px;
+        position:absolute;
+        top:10px;
+        left:0px;
+        margin-left:10px;
+        }
+            
+        ul{
+            list-style: none;
+            margin: 10px;
+        }
+        .info{
+            width: 100%;
+        }
+        .infoBox{
+            width: 50%;
+            float:left;
+        }
+        .map_View{
+            width: 50%;
+            float:right;
+        }
+        .map_View img{
+            width: 80%;
+        }
+        #attendingPopUp{
+            visibility: hidden;
+            text-align: center;
+        }
+        .button{
+            text-decoration: none;
+            padding: 5px;
+            color: #fff;
+            background-color: #556b2f;
+        }
+        .button-big{
+            padding: 10px 15px;
+        }
+        .button-img{
+            width: 10%;
+            padding: 2px;
+        }
+        .buttons{
+            float: right;
+            display: inline;
+            background-color: orange;
+        }
+        .buttons li{
+            margin-top: 10px;
+            margin-left: 15px;
+            margin-right: 20px;
+            float: left;
+        }
+        .radioBoxes{
+        font-size:20px;
+        text-align:center;
+        color:#556b2f;
+        }
+    </style>
+    
 </head>
 <body>
 
     <!-- logo/hjemknappen-->
 
-    <!-- sett inn funksjon for <a href="???">
-        <img alt="iTer" src="/images/???"
-        >
-     </a>
-    -->
+    <img src="images/iTerlogo.png" id="iTerLogo">
 
     <!-- tilbakeknapp -->
 
-    <!-- sett inn funksjon for tilbake til forrige side <a href="???">
-        <img alt="Tilbake" src="/images/???"
-        >
-     </a>
-    -->
+    <img src="images/backBtn.jpg" id="backBtn">
 
     <!-- flagg språk som liksom skal være klikkbart -->
     
         <img alt="ENG" src="/images/english-language-flag-round.png)"
-        width=150" height="70">
+        width="150" height="70">
      </a>
 
     <!-- Overskrfit organiser tur -->
@@ -54,6 +126,9 @@
     <!-- knapp for kart -->
 
     <button type="button">Kart</button>
+    <div class="map_View">
+        <img src="images/map.jpg"/>
+    </div>
 
     <!-- knapp for turtype -->
 
@@ -64,10 +139,30 @@
     <h3 style="text-align:center">Vanskelighetsgrad</h3>
 
     <!-- vanskelighetsgrad 6 punker-->
+                                 
+     <div class="radioBoxes">
+        OPPGI VANSKELIGEHTSGRAD:<br>
+        <br>
+        <input type="radio" id="En" name="gradering" value="1">
+        <input type="radio" id="To" name="gradering" value="2">
+        <input type="radio" id="Tre" name="gradering" value="3">
+        <input type="radio" id="Fire" name="gradering" value="4">
+        <input type="radio" id="Fem" name="gradering" value="5">
+      </div>
 
     <!-- knapp registrer tur -->
 
-    <button type="button">Registrer tur!</button>
+    <button type="button" style="background-color:#556b2f;margin:auto;display:block">Registrer tur!</button>
+
+   <footer>
+        <ul>
+            <li><a href="#">Vårt Github Repository</a></li>
+            <li><a href="#">Kontakt Oss!</a></li>
+            <li><a href="#">Kurs</a></li>
+            <li>Gruppe 7B &copy 2021</li>
+    
+        </ul>
+    </footer>
 
     <script src="script.js"></script>
 </body>
