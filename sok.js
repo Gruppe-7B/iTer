@@ -10,7 +10,7 @@ function search(tagNavn) {
             x[i].style.display="none";
         }
         else {
-            x[i].style.display="initial";
+            x[i].style.display="block";
         }
     }
 }
