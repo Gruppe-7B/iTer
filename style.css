@@ -112,7 +112,7 @@ h2{
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .mine-turer-ul{
@@ -122,17 +122,18 @@ h2{
   margin: 0;
 }
 .mine-turer-ul li{
-  background-color: green;
-  color: white;
   list-style: none;
-  border-radius: 5px;
   height: 50px;
   margin: 20px;
   font-size: 20px;
+  border: solid;
+  border-radius: 10px;
+  border-color:#556b2f;
 
 }
 .min-tur{
-  border: solid green;
+  border: solid;
+  border-color:#556b2f;
   border-radius: 5px;
   width: 400px;
   height: 200px;
