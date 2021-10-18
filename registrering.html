@@ -8,17 +8,13 @@
     <title>Tittel</title>
 </head>
 <style>
-    #slcMeny{
-    border-style:solid;
-   border-width:2px;
-    border-color:#556b2f;
-    border-radius: 10px;
-    padding:10px;
-    font-size:20px;
-    font-family:Abel;
-        position:relative;
-        left: 500px;
+    
+.radioBoxes{
+font-size:20px;
+text-align:center;
+color:#556b2f;
     }
+    
     #flagg{
   width: 62px;
   height:43px;
@@ -48,28 +44,24 @@
 <img src="images/flagg.png" id="flagg"><br>
 <img src="images/backBtn.jpg" id="backBtn">
 <img src="images/iTerlogo.png" id="iTerLogo">
-
+    
+     <div class="radioBoxes">
+    OPPGI VANSKELIGEHTSGRAD:<br>
+    <br>
+    <input type="radio" id="En" name="gradering" value="1">
+    <input type="radio" id="To" name="gradering" value="2">
+    <input type="radio" id="Tre" name="gradering" value="3">
+    <input type="radio" id="Fire" name="gradering" value="4">
+    <input type="radio" id="Fem" name="gradering" value="5">
+  </div>
 <br>
-    /*
-<select id="slcMeny">
-    <option>eks1</option>
-    <option>eks2</option>
-    <option>eks3</option>
-    <option >eks4</option>
-    <option>eks5</option>
-    <option selected disabled>Oppgi vanskelighetsgrad</option>
-</select>
+ 
 <script>
-    var slcMeny=document.getElementById("slcMeny");
+    var radioBoxes=document.getElementById("radioBoxes");
     var flagg=document.getElementById("flagg");
     var backBtn=document.getElementById("backBtn");
     var iTerLogo=document.getElementById("iTerLogo");
 
-backBtn.onclick=function()
-
-    slcMeny.onchange=function(){
-    var indeks = slcMeny.selectedIndex;
-    }
 </script>
 </body>
 </html>
