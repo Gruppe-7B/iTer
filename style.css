@@ -107,10 +107,6 @@ h2{
   left:0px;
 }
 
-.logo{
-}
-
-.mine-turer-text{
   font-size: 25px;
 }
 
@@ -120,7 +116,6 @@ h2{
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-
 }
 
 .mine-turer-ul{
@@ -147,4 +142,10 @@ h2{
   text-align: center;
   margin-top: 10px;
 }
+.mine-turer-text{
+=======
+.logo{
+}
+.mine-turer-text{
+  }
 
