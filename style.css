@@ -107,9 +107,6 @@ h2{
   left:0px;
 }
 
-  font-size: 25px;
-}
-
 .mine-turer-container{
   justify-content: center;
   align-items: center;
@@ -142,10 +139,9 @@ h2{
   text-align: center;
   margin-top: 10px;
 }
+
 .mine-turer-text{
-=======
-.logo{
+  font-size: 25px;
 }
-.mine-turer-text{
-  }
+
 
