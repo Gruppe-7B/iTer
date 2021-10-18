@@ -87,17 +87,22 @@
                 <li>Vanskelighetsgrad: 3/5</li>
             </ul>
             <h2>Deltakere: </h2>
+            <div class="søkefunksjon">
+                <form>
+                    <input type="text" id="myInput" onkeyup="search('attendee')" placeholder="Søk etter deltakere">
+                </form>
+            </div>
             <ul>
-                <li>Jens Else Bråthen</li>
-                <li>Ahmed Rabinovich</li>
-                <li>Kim Lee Park</li>
-                <li>Dorothéa Bellevue</li>
-                <li>Kamban Nedungkuzhaikkaathar</li>
-                <li>Trine Jensen</li>
-                <li>Jean-Luc Bonhomme</li>
-                <li>Jeanette Afzal Khan</li>
-                <li>Bartosz Wojciechowski</li>
-                <li>Aaliyah Guttormsen</li>
+                <li class="attendee">Jens Else Bråthen</li>
+                <li class="attendee">Ahmed Rabinovich</li>
+                <li class="attendee">Kim Lee Park</li>
+                <li class="attendee">Dorothéa Bellevue</li>
+                <li class="attendee">Kamban Nedungkuzhaikkaathar</li>
+                <li class="attendee">Trine Jensen</li>
+                <li class="attendee">Jean-Luc Bonhomme</li>
+                <li class="attendee">Jeanette Afzal Khan</li>
+                <li class="attendee">Bartosz Wojciechowski</li>
+                <li class="attendee">Aaliyah Guttormsen</li>
             </ul>
         </div>
         <div class="map_View">
@@ -132,6 +137,7 @@
     }
 </script>
 <script src="script.js"></script>
+    <script src="sok.js"></script>
 </body>
 </html>
 
