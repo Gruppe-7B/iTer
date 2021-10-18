@@ -5,26 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title>Tittel</title>
+    <title>Logg Inn!</title>
+    <style>
+        .navbar{
+            margin-top: 0;
+        }
+
+        .logInHolder form{
+            margin: 50px auto;
+            width: 25%;
+            font-size: 1.8em;
+            overflow: hidden;
+        }
+        .logInHolder form input{
+            border-radius: 5px;
+            font-size: 1.2em;
+            width: 100%;
+            height: 40px;
+            border: none;
+        }
+        #password{
+            margin-bottom: 40px;
+        }
+        .btn{
+            border-radius: 5px;
+            font-size: 1.5em;
+            margin-left: 20%;
+            padding: 10px 15px;
+            color: #fff;
+            background-color: #556b2f;
+        }
+        .small-btn{
+            background-color: blue;
+            margin-top: 50px;
+            padding: 2px 3px;
+            font-size: 1em;
+        }
+
+
+    </style>
 </head>
 <body>
-<header>
-    <div class="navbar">
-        <ul class="navElementContainer">
-            <li class="navElement"><a href="#"><img src="images/iTerlogo.png" alt="logo"/></a></li>
-            <li class="navElement"><h1>iTer</h1></li>
-            <li class="navElement"><a href="#"><img src="images/user.png" alt="tilbake"/></a></li>
-            <li class="navElement"><a href="#"><img src="images/user.png" alt="profil"/></a></li>
-        </ul>
-    </div>
-</header>
-
-
-<div class="clear"></div>
-<footer>
-    Gruppe 7B &copy 2021
-</footer>
+<div class="navbar">
+    <ul class="navElementContainer">
+        <li class="navElement"><a href="#"><img src="images/backBtn.png" alt="tilbakeKnapp" id="backBtn"/ ></a></li>
+        <li class="navElement"><a href="#"><img src="images/iTerlogo.png" alt="Logo/Hjem Knapp"/></a></li>
+        <li class="navElement"><a href="#"><img src="images/flagg.png" alt="Velg Språk"/></a></li>
+        <li class="navElement"><a href="#"><img src="images/user.png" alt="Brukerprofil"/></a></li>
+    </ul>
 </div>
+<div class="clear"></div>
+<div class="container">
+    <div class="logInHolder">
+        <form>
+            <p><label for="userName">Brukernavn: </label></p>
+            <input type="text" name="userName" id="userName"/>
+            <p><label for="password">Passord: </label></p>
+            <input type="password" name="password" id="password"/>
+            <a href="velgtur.html" class="btn">Logg Inn!</a>
+            <br>
+            <br>
+            <a href="registrering.html" class="btn small-btn" id="reg">Registrer Deg!</a>
+        </form>
+
+
+    </div>
+</div>
+<footer>
+    <ul>
+        <li><a href="#">Vårt Github Repository</a></li>
+        <li><a href="#">Kontakt Oss!</a></li>
+        <li><a href="#">Kurs</a></li>
+        <li>Gruppe 7B &copy 2021</li>
+
+    </ul>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
 
