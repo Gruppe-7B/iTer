@@ -30,9 +30,7 @@ body{
 .navElement:nth-child(3) {
   margin-left: 34%;
 }
-.navElement:nth-child(3) a img{
 
-}
 .navElement a{
   text-decoration: none;
   font-size: 1.5em;
@@ -58,19 +56,18 @@ a {
   text-decoration: none;
   color: #000;
 }
-.test{
-  font-family: Abel;
-}
 
 footer {
-  margin-top: 40px;
+  /*https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/*/
+  position:fixed;
+  bottom:0;
   background-color: #E8E6E1;
   width: 100%;
-  margin-bottom: -10px;
 }
 
 footer ul{
   margin-left: 20px;
+  margin-top: 10px;
   padding: 10px;
 }
 /*Valgt Tur*/
@@ -82,7 +79,7 @@ footer ul{
   text-align: center;
   width:110px;
   font-size:20px;
-  font-family:Lucida Sans Unicode;
+  font-family: 'Lucida Sans Unicode', sans-serif;
   font-weight:bold;
   border-style:solid;
   border-color:#556b2f;
@@ -91,12 +88,12 @@ footer ul{
 
 h1{
   font-size: 30px;
-  font-family: Abel;
+
   font-weight:normal;
 }
 h2{
   font-size: 20px;
-  font-family: Abel;
+
   font-weight:normal;
 }
 .flagg{
