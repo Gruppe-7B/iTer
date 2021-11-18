@@ -9,133 +9,31 @@
 </head>
 
 <style>
-
-    .minitekst{
+    .desc{
         font-size: 70%;
         text-align: right;
     }
-
-    .byggtau{
-        font-size: 70%;
-        text-align: right;
-    }
-
-    .bade{
-        font-size: 70%;
-        text-allign: right;
-
-    }
-
-
-    #fjellikon{
-        margin-right: 300px;
-        margin-bottom: 20px;
-        margin-left: 0px;
+    .tur-icon{
+        margin: 0 300px 20px 0;
         height: 70px;
         width: 70px;
-        object-fit: contain;
     }
-
-    #skog{
-        margin-right: 300px;
-        margin-bottom: 20px;
-        margin-left: 0;
-        height: 70px;
-        width: 70px;
-        object-fit: contain;
-
-    }
-
-    #havetsikon{
-        margin-right: 300px;
-        margin-bottom: 20px;
-        margin-left: 0px;
-        margin-top: 3px;
-        height: 70px;
-        width:70px;
-        object-fit: contain;
-    }
-
-    
-    
-#myInput{
-        border-style: solid;
-        width: 320px;
+    #myInput{
+        border: 2px solid #556b2f;
+        width: 20%;
         padding: 10px;
-        border: solid #556b2f;
-        margin: 0;
         border-radius: 10px;
-        margin-left: 37%;
-        margin-right:auto;
-        position: solid;
+        margin-left: 39%;
     }
-
-
-
-
-   
-        // INAKTIV #myInput{
-        border-style: solid;
-        width: 320px;
-        padding: 10px;
-        border: solid #556b2f;
-        margin: 0;
-        border-radius: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        position: solid;
-
-
-    } 
-    .Fjelltur{
-        border-style: solid;
-        width: 320px;
-        padding: 50px;
+    .tur{
+        margin: 0 auto;
         border: 3px solid #556b2f;
-        margin: 0;
-        border-radius: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        font-family: abel;
+        width: 320px;
         font-size: 150%;
-        position: solid;
-        text-align: right;
-
+        padding: 50px;
+        border-radius: 20px;
+        text-align: center;
     }
-     .skog{
-        border-style: solid;
-         width: 320px;
-         padding: 50px;
-         border: 3px solid #556b2f;
-         margin: 0;
-         border-radius: 20px;
-         margin-right: auto;
-         margin-left: auto;
-         text-align: center;
-         font-family: abel;
-         font-size: 150%;
-         position: solid;
-         text-align: right;
-
-    }
-
-     
-    .havet{
-         border-style: solid;
-         width: 320px;
-         padding: 50px;
-         border: 3px solid #556b2f;
-         margin: 0;
-         border-radius: 20px;
-         margin-left: auto;
-         margin-right: auto;
-         text-align: center;
-         font-family: abel;
-         font-size: 150%;
-         position: solid;
-         text-align: right;
-        
 
 </style>
 
@@ -144,30 +42,29 @@
 
 <body>
 <div class="navbar">
-    <ul class="navElementContainer">
-        <li class="navElement"><a href="#"><img src="images/backBtn.png" alt="tilbakeKnapp" id="backBtn"/ ></a></li>
-        <li class="navElement"><a href="#"><img src="images/iTerlogo.png" alt="Logo/Hjem Knapp"/></a></li>
-        <li class="navElement"><a href="#"><img src="images/flagg.png" alt="Velg Språk"/></a></li>
-        <li class="navElement"><a href="#"><img src="images/user.png" alt="Brukerprofil"/></a></li>
-    </ul>
+    <a href="#" class="bck link"><img class="icon" src="images/pil.png" alt="Back button"/></a>
+    <a href="#" class="logo link"><img class="icon" id="logo" src="images/iTerlogo.png" alt="iTer logo"/></a>
+    <a href="#" class="language link"><img class="icon" src="images/flagg.png" alt="Change Language"/></a>
+    <a href="#" class="profile link"><img class="icon" src="images/user.png" alt="User profile"/><p id = "nameSpan">Brukernavn</p></a>
 </div>
+<div class="clear"></div>
 <div class="container">
 
 
 <form>
-
+    <label for="myInput"></label>
     <input type="text" id="myInput" onkeyup="search('tur')" placeholder="Søk etter ønsket tur">
     <button type="submit">Søk</button>
-    </form>
+</form>
 
 
 <br>
 <br>
 
 <div class="Fjelltur tur">
-    <a href="https://gruppe-7b.github.io/iTer/valgttur" class="btn"><strong>Klatretur opp UiA</strong></a>
-    <img src="images/fjellikon.png" id="fjellikon">
-    <p class="byggtau">Her får du klatret opp hovedbygget til UiA. VI følger ingen sikkerhetsregler og tau er rett og slett for pyser.</p>
+    <a href="valgttur.html" class="btn"><strong>Klatretur opp UiA</strong></a>
+    <img src="images/fjellikon.png" class="tur-icon" alt="Fjell ikon"/>
+    <p class="desc">Her får du klatret opp hovedbygget til UiA. VI følger ingen sikkerhetsregler og tau er rett og slett for pyser.</p>
 
     </div>
 
@@ -175,9 +72,9 @@
 <br>
 
 <div class="havet tur">
-    <a href="https://gruppe-7b.github.io/iTer/valgttur" class="btn"><strong>Tømmersurfing ned Otra</strong></a>
-    <img src="images/sjøikon.png" id="havetsikon">
-    <p class="bade">I dene turen får du opplevd drømmen som surfer og fløter samtidig. Opplev det fineste Kristiansand har å by på ved å surfe ned Otra i en fart på 3km/t.</p>
+    <a href="valgttur.html" class="btn"><strong>Tømmersurfing ned Otra</strong></a>
+    <img src="images/sjøikon.png" class="tur-icon" alt="Sjø ikon"/>
+    <p class="desc">I dene turen får du opplevd drømmen som surfer og fløter samtidig. Opplev det fineste Kristiansand har å by på ved å surfe ned Otra i en fart på 3km/t.</p>
 
 </div>
     
@@ -186,9 +83,9 @@
 
 
     <div class="skog tur">
-        <a href="https://gruppe-7b.github.io/iTer/valgttur" class="btn"><strong>Skogstur i jegersberg</strong></a>
-        <img src="images/skogikon.png" id="skog">
-        <p class="minitekst">Denne turen tar deg ned til jegersberg fantastiske flytebrygge. Her får du gått i både oppoverbakker og nedoverbakker med stort momentum. Ta med deg en pølse (NB VI GRILLER IKKE) og ha det gøy!</p>
+        <a href="valgttur.html" class="btn"><strong>Skogstur i jegersberg</strong></a>
+        <img src="images/skogikon.png" class="tur-icon" alt="Skog Ikon"/>
+        <p class="desc">Denne turen tar deg ned til jegersberg fantastiske flytebrygge. Her får du gått i både oppoverbakker og nedoverbakker med stort momentum. Ta med deg en pølse (NB VI GRILLER IKKE) og ha det gøy!</p>
 
 
     </div>
@@ -207,16 +104,13 @@
     </ul>
 </footer>
 <script src="script.js"></script>
-    <script src="sok.js"></script>
-</body>
-
+<script src="sok.js"></script>
 <script>
-
- var myInput=document.getElementById("myInput");
+    window.onload = function(){
+        loadUsername();
+    }
 </script>
-
-
-
+</body>
 
 </html>
 

@@ -1,54 +1,15 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Logg Inn!</title>
     <link rel="stylesheet" href="style.css">
-    <title>iTer</title>
-        <style>
-            
-        #spraak{
-        width: 70px;
-        height: 50px;
-        margin-right: 0px;
-        margin-left: 1400px;
-        margin-top: 0px;
-        position: solid;
-        }
-        .container{
-            margin-bottom: 200px;
-        }
-
-        #tilbake{
-        width: 50px;
-        height: 35px;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-right: 370px;
-        float: left;
-        position: solid;
-        }
-
-        #Logo{
-        height: 100px;
-        width: 80px;
-        float: top;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        position: solid;
-        }
-            
+    <style>
         ul{
             list-style: none;
-            margin: 10px;
-        }
-        .info{
-            width: 100%;
-        }
-        .infoBox{
-            width: 50%;
-            float:left;
+            margin: 0px;
         }
         .map_View{
             width: 50%;
@@ -57,28 +18,7 @@
         .map_View img{
             width: 80%;
         }
-        #attendingPopUp{
-            visibility: hidden;
-            text-align: center;
-        }
-        .button{
-            text-decoration: none;
-            padding: 5px;
-            color: #fff;
-            background-color: #556b2f;
-        }
-        .button-big{
-            padding: 10px 15px;
-        }
-        .button-img{
-            width: 10%;
-            padding: 2px;
-        }
-        .buttons{
-            float: right;
-            display: inline;
-            background-color: orange;
-        }
+
         .buttons li{
             margin-top: 10px;
             margin-left: 15px;
@@ -86,45 +26,39 @@
             float: left;
         }
         .radioBoxes{
-        font-size:20px;
-        text-align:center;
-        color:#556b2f;
+            font-size:20px;
+            text-align:center;
+            color:#556b2f;
         }
     </style>
-    
 </head>
 <body>
-    <div class="container">
-        <!-- logo/hjemknappen-->
-
-    <a href="https://gruppe-7b.github.io/iTer/"><img src="images/iTerlogo.png" id="Logo"></a>
-
-    <!-- tilbakeknapp -->
-
-    <a href="https://gruppe-7b.github.io/iTer/"><img src="images/backBtn.png" id="tilbake"></a>
-
-    <!-- flagg språk som liksom skal være klikkbart -->
-    
-    <a href="https://gruppe-7b.github.io/iTer/"><img alt="ENG" src="images/flagg.png" id="spraak"</a>
-
-    <!-- Overskrfit organiser tur -->
+<div class="navbar">
+    <a href="#" class="bck link"><img class="icon" src="images/pil.png" alt="Back button"/></a>
+    <a href="#" class="logo link"><img class="icon" id="logo" src="images/iTerlogo.png" alt="iTer logo"/></a>
+    <a href="#" class="language link"><img class="icon" src="images/flagg.png" alt="Change Language"/></a>
+    <a href="#" class="profile link"><img class="icon" src="images/user.png" alt="User profile"/><p id = "nameSpan">Brukernavn</p></a>
+</div>
+<div class="clear"></div>
+<div class="container">
+<!--Overskrift organiser tur -->
 
     <h1 style="text-align:center">Organiser en tur</h1>
 
     <!-- tittel text felt -->
-     <h4>Tittel</h4>
     <form>
-        <input type="text">
-        </form>
+        <label for="tittel"><p>Tittel:</p></label>
+        <input type="text" id="tittel">
+    </form>
 
 
     <br>
 
     <!-- tekst felt for info om turen -->
-    <h4>Tekst</h4>
     <form>
-        <input type="text">
-        </form>
+        <label for="beskrivelse"><p>Beskrivelse:</p></label>
+        <textarea id="beskrivelse"></textarea>
+    </form>
 
     <br>
 
@@ -144,8 +78,8 @@
     <h3 style="text-align:center">Vanskelighetsgrad</h3>
 
     <!-- vanskelighetsgrad 6 punker-->
-                                 
-     <div class="radioBoxes">
+
+    <div class="radioBoxes">
         OPPGI VANSKELIGEHTSGRAD:<br>
         <br>
         <input type="radio" id="En" name="gradering" value="1">
@@ -153,22 +87,29 @@
         <input type="radio" id="Tre" name="gradering" value="3">
         <input type="radio" id="Fire" name="gradering" value="4">
         <input type="radio" id="Fem" name="gradering" value="5">
-      </div>
+    </div>
 
     <!-- knapp registrer tur -->
 
     <button type="button" style="background-color:#556b2f;margin:auto;display:block">Registrer tur!</button>
-    </div>
-   <footer>
-        <ul>
-            <li><a href="#">Vårt Github Repository</a></li>
-            <li><a href="#">Kontakt Oss!</a></li>
-            <li><a href="#">Kurs</a></li>
-            <li>Gruppe 7B &copy 2021</li>
-    
-        </ul>
-    </footer>
+</div>
+<footer>
+    <ul>
+        <li><a href="#">Vårt Github Repository</a></li>
+        <li><a href="#">Kontakt Oss!</a></li>
+        <li><a href="#">Kurs</a></li>
+        <li>Gruppe 7B &copy 2021</li>
 
-    <script src="script.js"></script>
+    </ul>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    window.onload = function(){
+        loadUsername();
+    }
+</script>
 </body>
 </html>
+
+

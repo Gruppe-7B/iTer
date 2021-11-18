@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Logg Inn!</title>
     <style>
-        .navbar{
-            margin-top: 0;
-        }
 
         .logInHolder form{
             margin: 0 auto;
@@ -45,13 +42,12 @@
 </head>
 <body>
 <div class="navbar">
-    <ul class="navElementContainer">
-        <li class="navElement"><a href="#"><img src="images/backBtn.png" alt="tilbakeKnapp" id="backBtn"/ ></a></li>
-        <li class="navElement"><a href="#"><img src="images/iTerlogo.png" alt="Logo/Hjem Knapp"/></a></li>
-        <li class="navElement"><a href="#"><img src="images/flagg.png" alt="Velg Språk"/></a></li>
-        <li class="navElement"><a href="#"><img src="images/user.png" alt="Brukerprofil"/></a></li>
-    </ul>
+    <a href="#" class="bck link"><img class="icon" src="images/pil.png" alt="Back button"/></a>
+    <a href="#" class="logo link"><img class="icon" id="logo" src="images/iTerlogo.png" alt="iTer logo"/></a>
+    <a href="#" class="language link"><img class="icon" src="images/flagg.png" alt="Change Language"/></a>
+    <a href="#" class="profile link"><img class="icon" src="images/user.png" alt="User profile"/></a>
 </div>
+<div class="clear"></div>
 <div class="clear"></div>
 <div class="container">
     <div class="logInHolder">
@@ -60,11 +56,9 @@
             <input type="text" name="userName" id="userName" />
             <p><label for="password">Passord: </label></p>
             <input type="password" name="password" id="password" />
-            <a href="velgorg.html" class="btn">Logg Inn!</a>
+            <a href="velgorg.html" class="btn" onclick="setUsername(userName.value)">Logg Inn!</a>
             <a href="registrerBruker.html" class="btn small-btn" id="reg">Registrer Deg!</a>
         </form>
-
-
     </div>
 </div>
 <footer>
@@ -73,7 +67,6 @@
         <li><a href="#">Kontakt Oss!</a></li>
         <li><a href="#">Kurs</a></li>
         <li>Gruppe 7B &copy 2021</li>
-
     </ul>
 </footer>
 <script src="script.js"></script>

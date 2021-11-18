@@ -1,71 +1,19 @@
 /*For alle sidene*/
 /*https://www.w3docs.com/snippets/css/how-to-import-google-fonts-in-css-file.html*/
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
 *{
   margin: 0;
   padding: 0;
   font-family: 'Abel', sans-serif;
-
 }
 body{
   background-color: #F7F7F7;
 }
-.navbar{
-  height: 80px;
-  top: 0;
-  width: 100%;
-  background-color: #E8E6E1;
-}
-.navElementContainer{
-  list-style: none;
-  width: 100%;
-}
-ul{
-  list-style: none;
-}
-
-.navElement{
-  display: inline;
-  box-sizing: border-box;
-}
-.navElement:nth-child(2) {
-  margin-left: 47%;
-}
-.navElement:nth-child(2) img{
-  height: 100%;
-  width: 50px;
-}
-.navElement:nth-child(3) {
-  margin-left: 38%;
-}
-.navElement:nth-child(1) img{
-  height: 30px;
-  width: 30px;
-  margin-bottom: 20px;
-}
-.navElement:nth-child(3) img{
-  height: 30px;
-  width: 30px;
-  margin-bottom: 20px;
-}
-.navElement:nth-child(4) img{
-  height: 30px;
-  width: 30px;
-  margin-bottom: 20px;
-}
-
 .container{
   width: 90%;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 250px;
-}
-
-.icon{
-  height: 30px;
-  width: 30px;
-  margin-bottom: 20px;
 }
 .clear{
   clear: both;
@@ -73,6 +21,56 @@ ul{
 a {
   text-decoration: none;
   color: #000;
+}
+/*Navbar*/
+.navbar{
+  height: 80px;
+  top: 0;
+  width: 100%;
+  background-color: #E8E6E1;
+}
+.icon{
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.navbar a{
+  display: inline-block;
+  position: absolute;
+}
+#logo{
+  margin: 0 auto;
+}
+.bck{
+  left: 1%;
+}
+.logo{
+  left: 47%;
+  height: 80px;
+}
+#logo{
+  height: 80px;
+  width: 60px;
+}
+.language{
+  left: 85%;
+}
+.profile{
+  left: 90%;
+}
+.profile img{
+  margin-left: 25%;
+}
+.link{
+  height: 80px;
+}
+#nameSpan{
+  font-weight: bolder;
+  text-decoration: underline;
+}
+#nameSpan:hover{
+  color: blue;
 }
 
 footer {

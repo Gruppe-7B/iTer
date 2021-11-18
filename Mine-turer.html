@@ -8,14 +8,12 @@
 <body>
 
 <div class="navbar">
-    <ul class="navElementContainer">
-        <li class="navElement"><a href="#"><img src="images/backBtn.png" alt="tilbakeKnapp" id="backBtn"/ ></a></li>
-        <li class="navElement"><a href="#"><img src="images/iTerlogo.png" alt="Logo/Hjem Knapp"/></a></li>
-        <li class="navElement"><a href="#"><img src="images/flagg.png" alt="Velg Språk"/></a></li>
-        <li class="navElement"><a href="#"><img src="images/user.png" alt="Brukerprofil"/></a></li>
-    </ul>
+    <a href="#" class="bck link"><img class="icon" src="images/pil.png" alt="Back button"/></a>
+    <a href="#" class="logo link"><img class="icon" id="logo" src="images/iTerlogo.png" alt="iTer logo"/></a>
+    <a href="#" class="language link"><img class="icon" src="images/flagg.png" alt="Change Language"/></a>
+    <a href="#" class="profile link"><img class="icon" src="images/user.png" alt="User profile"/><p id = "nameSpan">Brukernavn</p></a>
 </div>
-
+<div class="clear"></div>
 <div class="mine-turer-container">
 
             <p class="mine-turer-text">Påmeldte Turer:</p>
@@ -44,5 +42,10 @@
     </ul>
 </footer>
 <script src="script.js"></script>
+<script>
+    window.onload = function(){
+        loadUsername();
+    }
+</script>
 </body>
 </html>

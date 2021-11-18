@@ -18,3 +18,19 @@ function goBack(){
     window.history.back();
 }
 
+function setUsername(navn){
+    if(navn){
+        sessionStorage.setItem("Navn", navn);
+    }else{
+        sessionStorage.setItem("Navn", "DefaultUser");
+    }
+
+}
+function getUsername(){
+    return sessionStorage.getItem("Navn");
+}
+
+function loadUsername(){
+    let container = document.getElementById("nameSpan");
+    container.innerHTML = getUsername();
+}
