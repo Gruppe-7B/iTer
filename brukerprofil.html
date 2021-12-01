@@ -5,22 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title>iTer</title>
+    <title>Brukerprofil</title>
     <style>
-        img {
-            width: 30px;
-            height: 30px;
-            border-radius: 20px;
-            float:left;
-            margin-left: 5px;
+        .navbar{
+        margin-top: 0;
+        }
+
+        .profil{
+         width: 50%;
+         padding: auto;
+         margin: 0;
+         margin-left: auto;
+         margin-right: auto;
+         font-family: abel;
+         font-size: 100%;
+         text-align: center;
+        }
+
+        #user{
+        margin-top: 10%;
+        width: 200px;
+        hight: 200px;
+        }
+
+        .btn{
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        padding: 0px;
+        margin: 0px;
+        }
     </style>
 </head>
+
 <body>
-    <img src="images/english-language-flag-round.png" alt="engelske flagget">
-    <img src="images/backBtn.png" alt="tilbakeknapp">
+<div class="navbar">
+    <ul class="navElementContainer">
+        <li class="navElement"><a href="#"><img src="images/backBtn.png" alt="tilbakeknapp" id="backBtn"></a></li>
+        <li class="navElement"><a href="#"><img src="images/iTerlogo.png" alt="logo/hjem knapp"></a></li>
+        <li class="navElement"><a href="#"><img src="images/flagg.png" alt="velg språk"></a></li>
+    </ul>
 </div>
-    <script src="script.js"></script>
+<div class="clear"></div>
+<div class="profil">
+    <a href="#"><img src="images/user.png" alt="profilbilde" id="user"></a>
+    <br>
+    <p>Thomas Thomasen</p>
+    <p>tomtom@uia.no</p>
+    <a href="https://gruppe-7b.github.io/iTer/velgorg.html" class="butten">Endre passord</a><br>
+    <br>
+    <br>
+    <br>
+    <a href class="btn">Mine turer</a><br><br>
+    <a href class="btn">Logg ut?</a>
+</div>
+<footer>
+    <ul>
+        <li><a href="#">Vårt Github Repository</a></li>
+        <li><a href="#">Kontakt Oss!</a></li>
+        <li><a href="#">Kurs</a></li>
+        <li>Gruppe 7B &copy 2021</li>
+    </ul>
+</footer>
+<script src="script.js"></script>
+<script src="sok.js"></script>
 </body>
-</html>
 
 
