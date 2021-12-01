@@ -7,57 +7,43 @@
     <link rel="stylesheet" href="style.css">
     <title>Brukerprofil</title>
     <style>
-        .navbar{
-        margin-top: 0;
-        }
 
-        .profil{
-         width: 50%;
-         padding: auto;
-         margin: 0;
-         margin-left: auto;
-         margin-right: auto;
-         font-family: abel;
-         font-size: 100%;
-         text-align: center;
+        /*Container til profilinnholdet*/
+        .profile-container{
+            width: 50%;
+            margin: 0 auto;
+            font-size: 100%;
+            text-align: center;
         }
-
-        #user{
-        margin-top: 10%;
-        width: 200px;
-        hight: 200px;
+        /*Størrelse på profilbildet og litt margin*/
+        #profile-picture{
+            margin-top: 10%;
+            width: 15%;
         }
-
-        .btn{
-        width: 20px;
-        height: 20px;
-        border: 1px solid black;
-        padding: 0px;
-        margin: 0px;
+        /*Egen underklasse til logg ut knappen som endrer farge*/
+        .btn-red{
+            background-color: #af0c0c;
         }
     </style>
 </head>
 
 <body>
 <div class="navbar">
-    <ul class="navElementContainer">
-        <li class="navElement"><a href="#"><img src="images/backBtn.png" alt="tilbakeknapp" id="backBtn"></a></li>
-        <li class="navElement"><a href="https://gruppe-7b.github.io/iTer/velgorg.html"><img src="images/iTerlogo.png" alt="logo/hjem knapp"></a></li>
-        <li class="navElement"><a href="#"><img src="images/flagg.png" alt="velg språk"></a></li>
-    </ul>
+    <a href="#" class="bck link" id="backBtn"><img class="icon" src="images/pil.png" alt="Back button"/></a>
+    <a href="velgorg.html" class="logo link"><img class="icon" id="logo" src="images/iTerlogo.png" alt="iTer logo"/></a>
+    <a href="#" class="language link"><img class="icon" src="images/flagg.png" alt="Change Language"/></a>
+    <a href="brukerprofil.html" class="profile link" style="visibility: hidden"><img class="icon" src="images/user.png" alt="User profile"/></a>
 </div>
 <div class="clear"></div>
-<div class="profil">
-    <a href="#"><img src="images/user.png" alt="profilbilde" id="user"></a>
-    <br>
+<div class="container">
+<div class="profile-container">
+    <img src="images/user.png" alt="profilbilde" id="profile-picture">
     <p>Thomas Thomasen</p>
     <p>tomtom@uia.no</p>
-    <a href="https://gruppe-7b.github.io/iTer/velgorg.html" class="butten">Endre passord</a><br>
-    <br>
-    <br>
-    <br>
-    <a href="https://gruppe-7b.github.io/iTer/Mine-turer.html" class="butten">Mine turer</a><br><br>
-    <a href="https://gruppe-7b.github.io/iTer/" class="butten">Logg ut?</a>
+    <a href="https://gruppe-7b.github.io/iTer/Mine-turer.html" class="btn-basic-small">Mine turer</a>
+    <a href="https://gruppe-7b.github.io/iTer/velgorg.html" class="btn-basic-small">Endre passord</a>
+    <a href="https://gruppe-7b.github.io/iTer/" class="btn-basic-small btn-red">Logg ut?</a>
+</div>
 </div>
 <footer>
     <ul>

@@ -17,7 +17,7 @@ function goBack(){
     */
     window.history.back();
 }
-
+/*TESTKODE TIL BRUKERPROFIL, IKKE FERDIG*/
 function setUsername(navn){
     if(navn){
         sessionStorage.setItem("Navn", navn);

@@ -7,33 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Logg Inn!</title>
     <style>
-
-        .logInHolder form{
-            margin: 0 auto;
-            width: 25%;
-            font-size: 1.3em;
-        }
-        .logInHolder form input{
-            border-radius: 5px;
-            font-size: 1em;
-            width: 100%;
-            box-sizing: border-box;
-            border: 1px solid black;
-        }
-        .btn{
-            border-radius: 5px;
-            display: inline-block;
-            font-size: 1.5em;
-            margin: 20px auto;
-            margin-left: 20%;
-            padding: 5px 15px;
-            color: #fff;
-            background-color: #556b2f;
-        }
-        .small-btn{
+        .small-btn-blue{
             background-color: blue;
-            margin-top: 25px;
-            padding: 4px 3px;
             font-size: 1em;
         }
 
@@ -42,28 +17,25 @@
 </head>
 <body>
 <div class="navbar">
-    <a href="#" class="bck link"><img class="icon" src="images/pil.png" alt="Back button"/></a>
+    <a href="#" class="bck link" id="backBtn"><img class="icon" src="images/pil.png" alt="Back button"  style="visibility: hidden"/></a>
     <a href="#" class="logo link"><img class="icon" id="logo" src="images/iTerlogo.png" alt="iTer logo"/></a>
     <a href="#" class="language link"><img class="icon" src="images/flagg.png" alt="Change Language"/></a>
-    <a href="#" class="profile link"><img class="icon" src="images/user.png" alt="User profile"/></a>
+    <a href="brukerprofil.html" class="profile link" style="visibility: hidden"><img class="icon" src="images/user.png" alt="User profile"/></a>
 </div>
 <div class="clear"></div>
-<div class="clear"></div>
 <div class="container">
-    <div class="logInHolder">
-        <form>
+        <form class="input-form">
             <p><label for="userName">Brukernavn: </label></p>
             <input type="text" name="userName" id="userName" />
             <p><label for="password">Passord: </label></p>
             <input type="password" name="password" id="password" />
-            <a href="velgorg.html" class="btn" onclick="setUsername(userName.value)">Logg Inn!</a>
-            <a href="registrerBruker.html" class="btn small-btn" id="reg">Registrer Deg!</a>
+            <a href="velgorg.html" class="btn-basic" onclick="setUsername(userName.value)">Logg Inn!</a>
+            <a href="registrerBruker.html" class="btn-basic small-btn-blue" id="reg">Registrer Deg!</a>
         </form>
-    </div>
 </div>
 <footer>
     <ul>
-        <li><a href="#">Vårt Github Repository</a></li>
+        <li><a href="https://github.com/Gruppe-7B">Vårt Github Repository</a></li>
         <li><a href="#">Kontakt Oss!</a></li>
         <li><a href="#">Kurs</a></li>
         <li>Gruppe 7B &copy 2021</li>

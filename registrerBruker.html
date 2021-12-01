@@ -6,70 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>Registrer Bruker</title>
-    <style>
-        .navbar{
-            margin-top: 0;
-        }
 
-        .logInHolder form{
-            margin: 0 auto;
-            width: 25%;
-            font-size: 1.3em;
-            overflow: hidden;
-        }
-        .logInHolder form input{
-            border-radius: 5px;
-            font-size: 1.0em;
-            width: 100%;
-            box-sizing: border-box;
-            border: 1px solid black;
-        }
-        .btn{
-            border-radius: 5px;
-            display: inline-block;
-            font-size: 1.5em;
-            margin: 20px auto;
-            margin-left: 20%;
-            padding: 5px 15px;
-            color: #fff;
-            background-color: #556b2f;
-            margin-top: 15%;
-        }
-
-    </style>
 </head>
 <body>
 <div class="navbar">
-    <a href="#" class="bck link"><img class="icon" src="images/pil.png" alt="Back button"/></a>
+    <a href="#" class="bck link" id="backBtn"><img class="icon" src="images/pil.png" alt="Back button"/></a>
     <a href="#" class="logo link"><img class="icon" id="logo" src="images/iTerlogo.png" alt="iTer logo"/></a>
     <a href="#" class="language link"><img class="icon" src="images/flagg.png" alt="Change Language"/></a>
-    <a href="http://localhost:63342/Test/iTer/brukerprofil.html?_ijt=k2f75r4bfobss4jgloepfdnk41&_ij_reload" class="profile link"><img class="icon" src="images/user.png" alt="User profile"/></a>
+    <a href="brukerprofil.html" class="profile link" style="visibility: hidden"><img class="icon" src="images/user.png" alt="User profile"/></a>
 </div>
 <div class="clear"></div>
 <div class="container">
-    <div class="logInHolder">
-        <form>
+        <form class="input-form">
             <p><label for="mail">Skolemail: </label></p>
             <input type="text" name="mail" id="mail"/>
             <p><label for="password">Passord: </label></p>
             <input type="password" name="password" id="password"/>
             <p><label for="repeatPassword">Gjenta Passord: </label></p>
             <input type="password" name="repeatPassword" id="repeatPassword"/>
-            <a href="velgorg.html" class="btn">Registrer!</a>
-            <br>
-            <br>
+            <a href="velgorg.html" class="btn-basic">Registrer bruker!</a>
         </form>
-
-
-    </div>
 </div>
 <footer>
     <ul>
-        <li><a href="#">Vårt Github Repository</a></li>
+        <li><a href="https://github.com/Gruppe-7B">Vårt Github Repository</a></li>
         <li><a href="#">Kontakt Oss!</a></li>
         <li><a href="#">Kurs</a></li>
         <li>Gruppe 7B &copy 2021</li>
-
     </ul>
 </footer>
 <script src="script.js"></script>
