@@ -17,13 +17,3 @@ Prinsippet familiarity handler om å bruke ting som brukeren er vant med å se i
 #### #4  Affordance
 
 Prinsippet affordance handler om å designe interaktive elementer så det er klart hvordan de fungerer og hva de er til. Dette blir virkeliggjort i appen ved at alle knappene har en lik stil så brukeren lett kan se hva som kan trykkes på og ikke. 
-
-
-#Felles eleme
-## Navigasjonsbar
-
-## .Container
-
-## .Clear
-
-## Footer
